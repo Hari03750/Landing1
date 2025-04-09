@@ -1,132 +1,21 @@
-/* General Reset and Fonts */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f9fafb;
-  color: #333;
-  scroll-behavior: smooth;
-}
-
-/* Navigation Bar */
-.nav {
-  background-color: #0b5ed7;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-.logo span {
-  font-weight: 500;
-}
-
-.menu a {
-  color: white;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.menu a:hover {
-  color: #e0e0e0;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(to right, #e0efff, #f9fafe);
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: #0b5ed7;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #0b5ed7;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
   font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0946aa;
-}
-
-/* Section Styling */
-.section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2.5rem;
   color: #0b5ed7;
-  margin-bottom: 1rem;
 }
 
-.section p, .section ul {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #444;
-}
-
-.section ul {
-  list-style: none;
-  padding: 1rem 0;
-}
-
-.section ul li {
-  padding: 0.3rem 0;
-}
-
-.section.alt {
-  background-color: #f1f5f9;
-}
-
-/* Scroll Reveal Animation */
-.section.hidden {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
-}
-
-.section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Footer */
-footer {
-  background-color: #e8eef5;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
 }
