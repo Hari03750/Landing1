@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prodigy InfoTech Internship</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="logo">Prodigy <span>InfoTech</span></div>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Ignite Your Future</h1>
+    <p>Start your journey with Prodigy InfoTech’s internship program and explore new possibilities.</p>
+    <a href="#register" class="btn">Join Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Prodigy InfoTech provides hands-on internship programs designed to build technical and professional skills for aspiring developers, designers, and tech enthusiasts.</p>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="section alt">
+    <h2>Our Programs</h2>
+    <ul>
+      <li>🌐 Web Development</li>
+      <li>📱 App Development</li>
+      <li>🤖 Machine Learning</li>
+      <li>🔐 Cyber Security</li>
+    </ul>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register" class="section">
+    <h2>Register Now</h2>
+    <p>Don’t miss your chance to be part of something big! Click below to access our registration form.</p>
+    <a href="https://your-registration-link.com" class="btn">Register</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@prodigyinfotech.dev">info@prodigyinfotech.dev</a></p>
+    <p>Website: <a href="https://prodigyinfotech.dev" target="_blank">prodigyinfotech.dev</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Prodigy InfoTech. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
