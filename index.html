@@ -1,61 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prodigy InfoTech Registration</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
 
-  <header class="nav">
-    <div class="logo">Prodigy <span>InfoTech</span></div>
-    <nav class="menu">
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#register">Register</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+.nav {
+  background: rgba(20, 30, 48, 0.95);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
 
-  <section class="hero">
-    <h1>Shape Your Career</h1>
-    <p>Join our hands-on virtual internship program. Enhance your skills with real-world tasks.</p>
-    <a href="#register" class="btn">Apply Now</a>
-  </section>
+.nav .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Prodigy InfoTech is committed to providing high-quality internship opportunities across trending technologies like Web Dev, Machine Learning, and more.</p>
-  </section>
+.nav .logo span {
+  color: #28f2ff;
+}
 
-  <section id="programs" class="section alt">
-    <h2>Internship Programs</h2>
-    <div class="card-container">
-      <div class="card">Web Development</div>
-      <div class="card">App Development</div>
-      <div class="card">Data Science</div>
-      <div class="card">Cyber Security</div>
-    </div>
-  </section>
+.menu a {
+  color: #28f2ff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
 
-  <section id="register" class="section">
-    <h2>Register Now</h2>
-    <p>Apply using the official registration form. Limited slots only!</p>
-    <a href="https://forms.gle/your-form-link" class="btn" target="_blank">Open Registration Form</a>
-  </section>
+.menu a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #28f2ff;
+}
 
-  <section id="contact" class="section alt">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@prodigyinfotech.dev">info@prodigyinfotech.dev</a></p>
-    <p>Website: <a href="https://prodigyinfotech.dev" target="_blank">prodigyinfotech.dev</a></p>
-  </section>
+.hero {
+  text-align: center;
+  padding: 7rem 1rem;
+  background: linear-gradient(to bottom right, rgba(36, 59, 85, 0.7), rgba(20, 30, 48, 0.7));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-  <footer>
-    &copy; 2025 Prodigy InfoTech. All rights reserved.
-  </footer>
+.hero h1 {
+  font-size: 3.5rem;
+  color: #28f2ff;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.hero p {
+  font-size: 1.25rem;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  color: #cde5f5;
+}
+
+.btn {
+  background-color: #28f2ff;
+  color: #000;
+  padding: 1rem 2.2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(40, 242, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1bd1e0;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(40, 242, 255, 0.7);
+}
+
+.register {
+  padding: 6rem 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.register h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.register input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .nav .logo {
+    font-size: 1.5rem;
+  }
+  .menu a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
